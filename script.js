@@ -9,7 +9,7 @@ hamburguesa.addEventListener('click', () => {
 function closeMenu(event) {
     if (!navList.contains(event.target) && !hamburguesa.contains(event.target)) {
         navList.classList.remove("active");
-        hamburguesa.classList.toggle('active');
+        hamburguesa.classList.remove('active');
     }
 }
 
