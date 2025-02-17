@@ -42,12 +42,18 @@ li {
     margin: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: "raleway", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 64px;
     color: var(--primary-color);
+   
 }
 
 .hero {
