@@ -177,14 +177,34 @@ body {
     flex-direction: column;
     gap: 16px;
     justify-content: center;
-    align-items: center;
-  
-   
+    align-items: center;  
+    transition: all 0.2s ease-in-out;
+}
+
+.destacado__card:hover{
+    transform: scale(1.01);
+}
+
+.destacado__card:hover .destacado__card-img{
+    filter: brightness(0.95);
+}
+
+.destacado__card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.destacado__card-img--nocover{
+    object-fit: fill !important;
+
 }
 
 
 
-.destacado__card-video {
+.destacado__card-thumbnail {
     height: 200px;
     width: 100% ;
 }
@@ -234,7 +254,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    transition: all 0.2s ease-in-out;
 }
+
+.proyectos__card:hover {
+    transform: scale(1.01);
+}
+
 
 .proyectos__card-thumbnail {
     width: 100%;
@@ -245,7 +271,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.2s ease-in-out;
 }
+
+.proyectos__card:hover .proyectos__card-img{
+    filter: brightness(0.95);
+}
+
 
 .productos__card-info {
     display: flex;
@@ -429,13 +461,14 @@ body {
     .destacado__card{
         gap: 20px;
         overflow: hidden;
+        position: relative;
     }
 
-    .destacado__card-video{
-        
+    .destacado__card-thumbnail{
         height: 390px;
-    
     }
+
+
 
     .publicidad{
         gap: 48px;
